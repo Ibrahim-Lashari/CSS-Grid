@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.itemn { grid-area: navigation}
+.item2 { grid-area: aside; }
+.item3 { grid-area: content; }
+.item4 { grid-area: section; }
+.item5 { grid-area: footer; color:navy; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'navigation navigation navigation navigation navigation navigation'
+    'aside aside content content content content'
+    'aside aside section section section section'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: limegreen;
+  padding: 10px;
+}
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.item1 {
+  background-color: seagreen;
+  text-align: center;
+  color:lightseagreen;
+}
+.itemn {
+    background-color: forestgreen;
+    text-align: center;
+    color: lightseagreen;
+}
+.item2 {
+    background-color: lime;
+    text-align: center;
+    color: darkblue;
+}
+.item3 {
+    background-color: steelblue;
+    text-align: center;
+    color: darkgreen;
+}
+.item4 {
+    background-color: navy;
+    text-align: center;
+    color: lawngreen;
+}
+.item5 {
+    background-color: turquoise;
+    text-align: center;
+    color: olive;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="itemn">Navigation</div>
+  <div class="item2">Aside</div>
+  <div class="item3">Content</div>  
+  <div class="item4">Section</div>
+  <div class="item5">Footer</div>
+</div>
+
+</body>
+</html>
